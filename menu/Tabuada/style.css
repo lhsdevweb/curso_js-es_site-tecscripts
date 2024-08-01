@@ -1,0 +1,24 @@
+@charset "UTF-8";
+* {margin: 0; padding: 0;}
+
+body {font-family: Arial, Helvetica, sans-serif; background: lightgray;}
+
+header {text-align: center; margin: 40px 0 20px 0;}
+
+section {background: white; width: fit-content; margin: auto; padding: 20px; margin-bottom: 20px;}
+div {text-align: center;}
+#numero {width: 50px; text-align: center;}
+#tab {width: 100px; margin-bottom: 20px; text-align: center;}
+
+#display2 {display: none;}
+#display_soma, #display_diferença, #display_multiplicar 
+{border-right: solid 1px black; padding: 20px; text-align: left;}
+#display_dividir {padding: 20px; text-align: left;}
+
+#home {margin-top: 40px;}
+
+footer {text-align: center; padding-top: 20px; font-weight: bold;}
+
+@media (max-width: 600px) {
+    footer {font-size: .9em;}
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onresize="mostraMenu()">
+    <header>
+        <h1>Técnicas de JavaScript e ECMAScript</h1>
+    </header>
+    <span id="IconeMenu" class="material-icons" onclick="clicaIconeMenu()">menu</span>
+    <menu class="ItensMenu">
+        <div class="ql1">
+            <a href="menu/SistemadeMultas.html">Sistema de Multas</a>
+            <a href="menu/HoradoDia/horadodia.html">Hora do Dia</a>
+            <a href="menu/CalcularIdade/calcular_idade.html">Calcular Idade</a>
+        </div>
+        <div class="ql2">
+            <a href="menu/Contador/contador.html">Contador</a>
+            <a href="menu/Tabuada/tabuada.html">Tabuada</a>
+            <a href="menu/Analisador/analisador.html">Analisador de Números</a>
+        </div>
+    </menu>
+    <menu id="ItensMenuMovel">
+            <!-- nesse caso, tem que usar um 'id' obrigatoriamente no menu por ser um menu móvel.
+            se usar uma classe o ícone do menu móvel não fica clicável -->
+            <a href="menu/SistemadeMultas.html">Sistema de Multas</a>
+            <a href="menu/HoradoDia/horadodia.html">Hora do Dia</a>
+            <a href="menu/CalcularIdade/calcular_idade.html">Calcular Idade</a>
+            <a href="menu/Contador/contador.html">Contador</a>
+            <a href="menu/Tabuada/tabuada.html">Tabuada</a>
+            <a href="menu/Analisador/analisador.html">Analisador de Números</a>
+    </menu>
+    <main>
+        <div></div>
+    </main>
+    <footer>
+        &copy;2024 Desenvolvido por LHS DevWeb. Todos os direitos reservados. <br>
+        Canal no YouTube: @CursoemVideo - Curso de JavaScript e ECMAScript
+    </footer>
+
+    <script>
+        function clicaIconeMenu() 
+        {
+            if (ItensMenuMovel.style.display == 'block') 
+                {ItensMenuMovel.style.display = 'none'}
+            else
+                {ItensMenuMovel.style.display = 'block'}
+        }
+        function mostraMenu() 
+        {
+            if (window.innerWidth >= 600)
+                {ItensMenu.style.display = 'block'}
+            else
+                {ItensMenu.style.display = 'none'}
+        }
+    </script>
+</body>
+</html>

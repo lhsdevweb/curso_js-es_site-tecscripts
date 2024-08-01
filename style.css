@@ -1,0 +1,62 @@
+
+@charset "UTF-8";
+* {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif;}
+
+body {display: flex; flex-direction: column; height: 100vh;}
+
+header {text-align: center; padding: 40px; background-color: black; color: white;} 
+
+/* MENU */
+#IconeMenu {display: none} #ItensMenuMovel {display: none;}
+
+.ItensMenu {display: flex; flex-wrap: wrap;}
+
+.ItensMenu > div {display: flex;} 
+.ql1 {width: 55%; justify-content: flex-end;} 
+.ql2 {width: 45%; justify-content: flex-start;}
+
+a {display: block; text-decoration: none; color: black; padding: 10px;} 
+a:hover {text-decoration: underline; color: blue; font-weight: bolder;}
+/* FIM MENU */
+
+main {display: flex; height: 100%; background-color: black}
+
+main div {flex: auto; background-size: cover;  
+            background: url('imagens/ecmascript-e-javascript.png') no-repeat center;}
+
+footer {background-color: black; color: white; padding: 20px; 
+        text-align: center; line-height: 1.5em;}
+/*
+footer #rodape1 {display: block;}
+footer #rodape2 {display: none;}
+*/
+
+@media (max-width: 950px) 
+{
+  h1 {font-size: 1.5em;} 
+  .ItensMenu > div {width: 100%; justify-content: center;}
+  /*
+  footer #rodape1 {display: none;}
+  footer #rodape2 {display: block;}  
+  */
+}
+
+@media (max-width: 800px) {
+  main div {background: url('imagens/JS-ES.jpg')  no-repeat center;}
+}
+
+@media (max-width: 600px) 
+{
+  h1 {font-size: 1.2em;}
+  .ItensMenu {display: none;}
+  
+  #IconeMenu {display: block; text-align: center; padding: 10px;}
+  #IconeMenu:hover {cursor: pointer;}
+
+  #ItensMenuMovel a {display: block; text-align: center; text-decoration: none; padding: 20px;
+                      font-weight: bolder; border-top: 2px solid darkgray; color: blue;}
+  #ItensMenuMovel a:hover {text-decoration: underline; color: white; background-color: blue;}
+
+  footer {font-size: .7em;}
+}
+        

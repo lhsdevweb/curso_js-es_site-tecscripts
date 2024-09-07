@@ -7,7 +7,7 @@ body {display: flex; flex-direction: column; height: 100vh;}
 header {text-align: center; padding: 40px; background-color: black; color: white;} 
 
 /* MENU */
-#IconeMenu {display: none} #ItensMenuMovel {display: none;}
+#IconeMenu {display: none} #ItensMenuMovel a {display: none;}
 
 .ItensMenu {display: flex; flex-wrap: wrap;}
 
@@ -30,9 +30,10 @@ footer p {display: flex; justify-content: center;}
 footer div {display: inline;}
 footer a {color: yellow; text-decoration: none;}
 footer a:hover {text-decoration: underline;}
-/*
 footer #rodape1 {display: block;}
 footer #rodape2 {display: none;}
+/*
+
 */
 
 @media (max-width: 950px) 
@@ -62,5 +63,7 @@ footer #rodape2 {display: none;}
   #ItensMenuMovel a:hover {text-decoration: underline; color: white; background-color: blue;}
 
   footer {font-size: .7em;}
+  footer #rodape1 {display: none;}
+  footer #rodape2 {display: block;}  
 }
         

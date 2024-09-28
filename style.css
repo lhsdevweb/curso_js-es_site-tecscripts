@@ -26,24 +26,24 @@ main div {flex: auto; background-size: cover;
 
 footer {background-color: black; color: white; padding: 20px; 
         text-align: center; line-height: 1.5em;}
-footer p {display: flex; justify-content: center;}
-footer div {display: inline;}
+
 footer a {color: yellow; text-decoration: none;}
 footer a:hover {text-decoration: underline;}
-footer #rodape1 {display: block;}
-footer #rodape2 {display: none;}
-/*
 
-*/
+footer div {display: flex; justify-content: center;}
+#paragrafo3 {display: none;}
+#paragrafo4 {display: none;}
 
 @media (max-width: 950px) 
 {
   h1 {font-size: 1.5em;} 
   .ItensMenu > div {width: 100%; justify-content: center;}
-  /*
-  footer #rodape1 {display: none;}
-  footer #rodape2 {display: block;}  
-  */
+}
+
+@media (max-width: 850px) {
+  #paragrafo2 {display: none;}
+  #paragrafo3 {display: block;}
+  #paragrafo3 div {display: flex; justify-content: center;}
 }
 
 @media (max-width: 800px) {
@@ -63,7 +63,13 @@ footer #rodape2 {display: none;}
   #ItensMenuMovel a:hover {text-decoration: underline; color: white; background-color: blue;}
 
   footer {font-size: .7em;}
-  footer #rodape1 {display: none;}
-  footer #rodape2 {display: block;}  
 }
-        
+
+@media (max-width: 410px) {
+  #paragrafo1 {display: block; text-align: center;}
+  #paragrafo1 .espaço {display: none;}
+  #paragrafo3 {display: none;}
+  #paragrafo4 {display: block;}
+  #paragrafo4 div {display: flex; justify-content: center;}
+}
+   

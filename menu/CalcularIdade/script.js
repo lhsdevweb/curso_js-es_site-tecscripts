@@ -1,12 +1,3 @@
-/*
-var data = new Date()
-var anoatual = data.getFullYear() 
-window.alert(anoatual.innerText) - não funciona - 
-window.alert(anoatual.value) - não funciona - 
-window.alert(anoatual) - funciona -
-window.alert(String(anoatual)) - funciona -
-window.alert(Number(anoatual)) - funciona -
-*/
 
 function verificar() {
     var data = new Date()
@@ -31,12 +22,14 @@ function verificar() {
             } else if (idade < 18) {
                 //jovem
                 img.setAttribute('src', 'img/jovem-m.png')
+                if (window.innerWidth < 600) {img.style.maxWidth = '70%'}
             } else if (idade < 60) {
                 //adulto
                 img.setAttribute('src', 'img/adulto-m.png')
             } else {
                 //idoso
                 img.setAttribute('src', 'img/idoso.png')
+                if (window.innerWidth < 400) {img.style.maxWidth = '80%'}
             }
         } else {
             genero = 'Feminino'
@@ -46,6 +39,7 @@ function verificar() {
             } else if (idade < 18) {
                 //jovem
                 img.setAttribute('src', 'img/jovem-f.png')
+                if (window.innerWidth < 600) {img.style.maxWidth = '70%'}
             } else if (idade < 60) {
                 //adulto
                 img.setAttribute('src', 'img/adulto-f.png')

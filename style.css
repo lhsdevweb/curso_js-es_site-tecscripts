@@ -7,7 +7,7 @@ body {display: flex; flex-direction: column; height: 100vh;}
 header {text-align: center; padding: 40px; background-color: black; color: white;} 
 
 /* MENU */
-#IconeMenu {display: none} #ItensMenuMovel a {display: none;}
+#IconeMenu {display: none} #ItensMenuMovel {display: none;}
 
 .ItensMenu {display: flex; flex-wrap: wrap;}
 
@@ -58,8 +58,9 @@ footer div {display: flex; justify-content: center;}
   #IconeMenu {display: block; text-align: center; padding: 10px;}
   #IconeMenu:hover {cursor: pointer;}
 
-  #ItensMenuMovel a {display: block; text-align: center; text-decoration: none; padding: 20px;
-                      font-weight: bolder; border-top: 2px solid darkgray; color: blue;}
+  #ItensMenuMovel {flex-direction: column; text-align: center;}
+  #ItensMenuMovel a {text-decoration: none; padding: 20px; font-weight: bolder; 
+                     border-top: 2px solid darkgray; color: blue;}
   #ItensMenuMovel a:hover {text-decoration: underline; color: white; background-color: blue;}
 
   footer {font-size: .7em;}

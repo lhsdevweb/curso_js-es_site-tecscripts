@@ -16,6 +16,7 @@ function tabuada() {
         var x= 0
         d1.innerHTML= ``
         d2.style.display = 'flex'
+        d2.style.flexWrap = "wrap"
         while (x <= 9) {
             resultado= numero + x
             ds.innerHTML+= `${numero} + ${x} = ${resultado} <br>`

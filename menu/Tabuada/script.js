@@ -17,6 +17,7 @@ function tabuada() {
         d1.innerHTML= ``
         d2.style.display = 'flex'
         d2.style.flexWrap = "wrap"
+        d2.style.justifyContent = 'center'
         while (x <= 9) {
             resultado= numero + x
             ds.innerHTML+= `${numero} + ${x} = ${resultado} <br>`
@@ -37,7 +38,10 @@ function tabuada() {
         x= 0
         while (x <= 9) {
             resultado= numero / x
-            ddv.innerHTML+= `${numero} / ${x} = ${resultado} <br>`
+            if ( numero % x == 0 ) 
+                { ddv.innerHTML+= `${numero} / ${x} = ${resultado} <br>` }
+            else 
+                { ddv.innerHTML+= `${numero} / ${x} = ${resultado.toFixed(2)} <br>` }
             x++
         }
     }

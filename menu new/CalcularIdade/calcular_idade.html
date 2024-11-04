@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Calcular Idade</title>
+</head>
+<body>
+    <header>
+        <h1>Calcular Idade</h1>
+        <h2>Usando JS de acordo com a data de nascimento</h2>
+    </header>
+    <main>
+        <div id="info">
+            <p>Ano de Nascimento: <input type="number" name="ano" id="ano" min="0"></p>
+            <p id="sexo">Sexo: 
+                <input type="radio" name="rsexo" id="M" checked>
+                <label for="M">Masculino</label>
+                <input type="radio" name="rsexo" id="F">
+                <label for="F">Feminino</label>
+            </p>
+            <p><input type="button" value="Ok" id="ok" onclick="verificar()"></p>
+        </div>
+        <div id="display">
+            Informe os dados nos campos acima e clique em 'Ok'.
+        </div>
+        <div id="home"><a href="../../index.html">Voltar</a></div>
+    </main>
+    <footer>
+        <div id="rodape1">
+            &copy;2024 Desenvolvido por LHS DevWeb. Todos os direitos reservados.
+        </div>
+        <div id="rodape2">
+            <p>&copy;2024 Desenvolvido por LHS DevWeb.</p>
+            <p>Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+
+* {margin: 0; padding: 0;}
+
+body {font-family: Arial, Helvetica, sans-serif; background: lightgray;}
+
+header {text-align: center; margin: 40px 0 20px 0;}
+h2 {font-weight: bold;}
+
+/* modificações realizadas pra centralizar o texto em id="display" via JS(*)
+(*) código JS incluído: d.style.textAlign = 'center'
+div {text-align: center;} - 'div' substituída por '#info'
+*/
+main {background: white; width: fit-content; margin: auto; padding: 20px;}
+#info {text-align: center;} 
+#ano {width: 100px; text-align: center;}
+#sexo {margin: 20px 0 20px 0;}
+#ok {width: 100px; margin-bottom: 20px;}
+#display {text-align: center;}
+#home {margin-top: 40px; text-align: center;}
+
+@media (max-width: 600px) {
+    h2 {font-size: 1.2em}
+}

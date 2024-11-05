@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../rodape.css">
+    <title>Detran</title>
+</head>
+<body>
+    <header>
+        <h1>Sistema de Multas</h1>
+    </header>
+    <main>
+        Velocidade do carro: <input type="number" name="speed" id="speed"> Km/h 
+        <input type="button" value="Verificar" onclick="AnalisarVelocidade()" class="verify">
+        <div id="display-v"></div>
+    
+        Nacionalidade: <input type="text" name="country" id="country">
+        <input type="button" value="Verificar" onclick="AnalisarNacionalidade()" class="verify">
+        <div id="display-n"></div>
+    
+        <div id="home"><a href="../../index.html">Voltar</a></div>
+    </main>
+    <footer>
+        <div id="rodape1">
+            &copy;2024 Desenvolvido por LHS DevWeb. Todos os direitos reservados.
+        </div>
+        <div id="rodape2">
+            <p>&copy;2024 Desenvolvido por LHS DevWeb.</p>
+            <p>Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
